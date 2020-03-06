@@ -1,0 +1,26 @@
+Showed Greg my marvelous database drawing
+    He suggested to rename a few columns for extra clarity and to move a few things around for flexibility
+
+Asked Greg about facebook message vs mail
+    Greg suggests using PHP mailer
+
+Asked about GameNyte vs BoardGameNyte (sorry Cody)
+    Greg suggested staring out more specifically for SEO
+    He also suggested some alliteration (ex BoardGameBuddy)
+
+Cody showed Greg the HTML skeletons
+    Greg says hamburger menus should be for moblie only. Desktop versions can use up their screen real estate and don't need hamburgers
+    Greg it not stoked about the color palate, suggests that we meet with a designer
+
+Greg suggests we use dummy JSON data so that the front end can get to work on something ASAP
+
+List of all the names without a map could be ok for MVP, but a map would be a 4.5
+
+Allowing the host to write details on his/her event should be MVP
+individual specialized fields, however, need not be MVP
+
+Resume builders for our website:
+    Google analytics
+    Wordpress Blog
+    Donate page for the event's host (Paypal)
+

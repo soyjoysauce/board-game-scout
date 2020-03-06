@@ -1,0 +1,52 @@
+Event
+{
+id:{int}
+location:{
+    address:{string}
+
+
+    zipcode:{int}
+    geolocation: {lat : {int},
+                  long: {int}}
+}
+TODO: Keep track of time! maybe with a calendar thing or something.
+isPrivate:{boolean},
+game:{name:{string},
+      info:{string}(url link),
+      tutorial: {string}(url link)
+locationVerified: {boolean}
+numPlayers:{int}
+eventDetails:{string}
+(this includes:
+parking
+snacks/drinks
+open to other games
+new players welcome/willing to teach
+)
+over21: {boolean}
+
+}
+
+
+Player
+{
+id:{int},
+firstName:{string},
+lastName:{string},
+age: {int},
+aboutMe:{string},
+gamesPlayed:{string}, //could we store the list of games played as a single string, and then use some delimiter?
+profilePic: {string} (file path)
+
+}
+
+Quiz Questions:
+
+What genres?
+Are you a team player or solo player?
+Do you like teaching new players?
+Are you a more relaxed or serious player?
+Do you prefer big groups or small groups?
+Do you consider yourself more shy or outgoing?
+Are you offended by profane language?
+List the games that you own:

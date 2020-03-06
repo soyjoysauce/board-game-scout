@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<style type="text/css">
+		.container{
+			display: inline-block;
+			position: relative;
+			margin-top: 5vh;
+		}
+	</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+<form action="createRow.php" method="POST">
+<div class="container">
+	<input class="input" type="text" name="firstName" placeholder="first name">
+	<br>
+	<br>
+
+	<input class="input" type="text" name="lastName" placeholder="last name">
+	<br>
+	<br>
+
+	<input type="text" name="email" placeholder="email">
+	<br>
+	<br>
+	<input type="text" name="phone" placeholder="phone">
+	<br>
+	<br>
+	<button class="btn btn-success" onclick="ajaxCall()">Submit</button>
+</div>
+</form>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+	});
+	function ajaxCall(){
+		$.ajax({
+			url: 'http://localhost/c717_board_game/createRow.php',
+			dataType: 'json',
+			method: 'POST',
+			success: function (response){
+				console.log("Success: ", response);
+			},
+			error: function (response){
+				console.log("Error: ", response);
+			}
+		});
+	}
+</script>
+</body>
+</html>
